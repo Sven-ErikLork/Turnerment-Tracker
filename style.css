@@ -1,0 +1,209 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+#grid {
+display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:auto;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark)
+}
+
+body {
+    background: #ccc;
+}
+
+/*///////////////////////////////////////////////
+Front
+///////////////////////////////////////////////*/
+
+.logo {
+    grid-column: 2/12;
+    height: 12rem;
+    margin-top: 60px;
+
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.log_ind {
+    grid-column: 4/10;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    min-height: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.log_ind .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+
+}
+
+.log_ind .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.opret_bruger {
+    grid-column: 3/11;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    min-height: 1rem;
+    margin-top: 30px;   
+
+
+}
+.opret_bruger .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.opret_bruger .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+/*///////////////////////////////////////////////
+liste_screen
+///////////////////////////////////////////////*/
+
+.title {
+    grid-column: 5/10;
+    text-align: center;
+}
+
+.title h1{
+    min-height: 100%;  
+    max-height: 100%;
+    min-height: auto;  
+    max-width: auto;
+    text-decoration: none;
+
+}
+
+
+/*///////////////////////////////////////////////
+logind
+///////////////////////////////////////////////*/
+
+
+
+
+/*///////////////////////////////////////////////
+indstillinger
+///////////////////////////////////////////////*/
+
+
+
+
+/*///////////////////////////////////////////////
+opret bruger
+///////////////////////////////////////////////*/
+header {
+    grid-column: 2/12;
+    margin: 2px;
+}
+header img{
+    height: 10rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.turnerment_navn {
+    grid-column: 2/12;
+    background-color: aqua;
+    height: 4rem;
+    margin-top: 25px;
+
+}
+
+.password {
+    grid-column: 2/12;
+    background-color: red;
+    height: 4rem;
+    margin-top: 25px;
+
+}
+
+.deltager {
+    grid-column: 2/12;
+    background-color: aqua;
+    height: 4rem;
+    margin-top: 25px;
+
+}
+
+.straff {
+    grid-column: 2/12;
+    background-color: red;
+    height: 4rem;
+    margin-top: 25px;
+
+}
+
+.opret {
+    grid-column: 2/12;
+    background-color: yellow;
+    height: 4rem;
+    margin-top: 25px;
+
+}
+/*///////////////////////////////////////////////
+responsive
+///////////////////////////////////////////////*/
+
+/*
+@media(max-width: 500px) {
+
+    
+}
+
+@media(min-width: 501px) {
+    
+    .log_ind{
+        margin-right: 10px;
+    }
+    .opret_bruger{
+        margin-left: 10px;
+    }
+    img {
+        width: 65%;
+        height: auto;
+    }
+} */
