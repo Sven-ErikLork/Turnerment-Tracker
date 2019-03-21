@@ -27,6 +27,20 @@ body {
     background: #ccc;
 }
 
+header {
+    grid-column: 2/12;
+    margin: 2px;
+}
+header img{
+    height: 10rem;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 0.8rem;
+}
+ 
 /*///////////////////////////////////////////////
 Front
 ///////////////////////////////////////////////*/
@@ -56,8 +70,6 @@ Front
     margin-bottom: 30px;
 
 }
-
-
 
 .log_ind .btn {
     background: var(--dark);
@@ -103,27 +115,109 @@ Front
 liste_screen
 ///////////////////////////////////////////////*/
 
-.title {
-    grid-column: 5/10;
+.turnermentname {
+    grid-column: 2/11;
+    margin-top: 4px;
+    background: blue;
+    height: 2rem; 
     text-align: center;
+    margin-bottom: 1.1rem;
 }
 
-.title h1{
-    min-height: 100%;  
-    max-height: 100%;
-    min-height: auto;  
-    max-width: auto;
-    text-decoration: none;
+.turnermentname .h3 {
 
 }
 
+.indstillinger {
+    grid-column: 11/12;
+    margin-left: 1rem;
+    margin-top: 4px;
+    margin-bottom: 1.1rem;
+
+}
+
+.indstillinger .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.points {
+    grid-column: 2/5;
+    height: 19rem;
+    background-color: yellow;
+
+}
+
+.bruger {
+    grid-column: 5/11;
+    height: 19rem;
+    background-color: aqua;
+
+}
+
+.buttons {
+    grid-column: 11/12;
+    height: 19rem;
+    background-color: red;
+    
+}
+
+.leaderpoints {
+    grid-column: 1/5;
+    height: 5rem;
+    background-color: aqua;
+}
+
+.leader {
+    grid-column: 5/9;
+    height: 5rem;
+    background-color: blue;
+}
+
+.leaderstraff {
+    grid-column: 9/13;
+    height: 5rem;
+    background-color: orange;
+}
 
 /*///////////////////////////////////////////////
 logind
 ///////////////////////////////////////////////*/
 
+.turnermentnaame {
+    grid-column: 2/12;
+    background-color: palegoldenrod;
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+.password {
+    grid-column: 2/12;
+    background-color: red;
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
 
+.log_iind {
+    grid-column: 2/12;
+    background-color: plum;
+    height: 4rem;
+    margin-top: 7rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.log_iind .btn {
+    text-decoration: none;
+    
+
+}
 
 /*///////////////////////////////////////////////
 indstillinger
@@ -135,37 +229,36 @@ indstillinger
 /*///////////////////////////////////////////////
 opret bruger
 ///////////////////////////////////////////////*/
-header {
-    grid-column: 2/12;
-    margin: 2px;
-}
-header img{
-    height: 10rem;
-    max-width: 100%;
-    height: auto;
-}
 
 .turnerment_navn {
     grid-column: 2/12;
     background-color: aqua;
     height: 4rem;
     margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 }
 
-.password {
+/* .password {
     grid-column: 2/12;
     background-color: red;
     height: 4rem;
     margin-top: 25px;
-
-}
+    margin-left: 20px;
+    margin-right: 20px;
+Blev allerede brugt, men har den samme funktion ... skal i javascript dog kunne noget andet ... spørg Jarne!
+} */
 
 .deltager {
     grid-column: 2/12;
     background-color: aqua;
     height: 4rem;
     margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 }
 
@@ -174,6 +267,9 @@ header img{
     background-color: red;
     height: 4rem;
     margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 }
 
@@ -182,6 +278,9 @@ header img{
     background-color: yellow;
     height: 4rem;
     margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 }
 /*///////////////////////////////////////////////
