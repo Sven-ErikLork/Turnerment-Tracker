@@ -1,0 +1,740 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+#grid {
+display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:auto;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark)
+}
+
+header {
+    grid-column: 2/12;
+    margin: 2px;
+}
+header img{
+    height: 10rem;
+    max-width: 100%;
+    height: auto;
+}
+/*
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+.slide:nth-child(1) {
+    left:0%;
+    animation-delay: -1s;
+    background-image: url(images/csgo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(images/bordfodbold.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(images/curvefever1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(4) {
+    left:0%;
+    animation-delay: 8s;
+    background-image: url(images/coding.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% { left: 100%; width: 100%;}
+    5% { left:0%; }
+    25% { left: 0%;}
+    30% { left: -100%; width: 0%;}
+    30.0001% { left: -100%; width: 0%;}
+    100% { left: 100%; width: 0%;}
+}
+*/
+footer {
+    position: sticky;
+    margin-top: 0.8rem;
+}
+ 
+/*///////////////////////////////////////////////
+Front
+///////////////////////////////////////////////*/
+
+.logo {
+    grid-column: 2/12;
+    height: 12rem;
+    margin-top: 60px;
+
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.log_ind {
+    grid-column: 2/12;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    min-height: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.log_ind .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 1.1rem 6.3rem;
+    text-decoration: none;
+    border: 0;
+
+}
+
+.log_ind .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.opret_bruger {
+    grid-column: 2/12;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: 30px;   
+
+
+}
+.opret_bruger .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 1.1rem 4.2rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.opret_bruger .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+/*///////////////////////////////////////////////
+liste_screen
+///////////////////////////////////////////////*/
+
+.turnermentname {
+    grid-column: 2/11;
+    margin-top: 4px;
+    height: 2rem; 
+    text-align: center;
+    margin-bottom: 1.1rem;
+    font-size: 150%;
+}
+
+.turnermentname .h3 {
+}
+
+.indstillinger {
+    grid-column: 11/12;
+    margin-left: 1rem;
+    margin-top: 4px;
+    margin-bottom: 1.1rem;
+}
+
+
+.points {
+    grid-column: 2/5;
+    height: 19rem;
+    background-color: yellow;
+
+}
+
+.bruger {
+    grid-column: 5/12;
+    height: 19rem;
+    background-color: var(--dark);
+    width: 100%;
+    float: left;
+}
+
+
+.leaderpoints {
+    grid-column: 1/5;
+    height: 4.8rem;
+    background-color: var(--light);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 140%;
+}
+
+.leader {
+    grid-column: 5/9;
+    height: 4.8rem;
+    background-color: var(--light);
+    border: solid;
+    border-left: none;
+    border-right: none;
+    
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 140%;
+}
+
+.leaderstraff {
+    grid-column: 9/13;
+    height: 4.8rem;
+    background-color: var(--light);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 140%;
+}
+
+
+  ul.todo {
+    width: 100%;
+    float: left;
+  }
+  
+  ul.todo li {
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    line-height: 22px;
+  
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    margin: 0 0 10px 0;
+    padding: 14px 10px 0px 0px;
+    word-break: break-word;
+  }
+  
+  ul.todo li:last-of-type {
+    margin: 0;
+  }
+  
+  ul.todo li .buttons {
+    width: 100px;
+    height: 50px;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  ul.todo li .buttons button {
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: none;
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  ul.todo li .buttons button:last-of-type:before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #edf0f1;
+  
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  
+  ul.todo li .buttons button svg {
+    width: 22px;
+    height: 22px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    margin: -11px 0 0 -11px;
+  }
+  
+  ul.todo li .buttons button.complete svg {
+    border-radius: 11px;
+    border: 1.5px solid #25b99a;
+  
+    transition: background 0.2s ease;
+  }
+  
+  ul.todo#completed li .buttons button.complete svg {
+    background: #25b99a;
+    border: 0px;
+  }
+  
+  ul.todo:not(#completed) li .buttons button.complete:hover svg {
+    background: rgba(37, 185, 154, 0.75);
+  }
+  
+  ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
+    fill: #fff;
+  }
+  
+  ul.todo#completed li .buttons button.complete svg .fill {
+    fill: #fff;
+  }
+  
+  ul.todo li .buttons button svg .fill {
+    transition: fill 0.2s ease;
+  }
+  
+  ul.todo li .buttons button.remove svg .fill {
+    fill: #c0cecb;
+  }
+  
+  ul.todo li .buttons button.remove:hover svg .fill {
+    fill: #e85656;
+  }
+  
+
+  ul.todo#completed {
+    position: relative;
+    padding: 60px 0 0 0;
+  }
+  
+  ul.todo#completed:before {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #d8e5e0;
+  
+    position: absolute;
+    top: 30px;
+    left: 50%;
+  
+    margin: 0 0 0 -75px;
+  }
+  
+  ul.todo#todo:empty:after {
+    content: 'Ingen Deltager indsat!';
+    margin: 15px 0 0 0;
+  }
+  
+  
+  ul.todo#todo:after,
+  ul.todo#completed:after {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+/*///////////////////////////////////////////////
+logind
+///////////////////////////////////////////////*/
+
+.turnermentnaame {
+    grid-column: 2/12;
+    background-color: var(--light);
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: var(--dark);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 160%;
+    
+}
+
+.turnermentnaame h4 {
+    padding: 1.1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.password {
+    grid-column: 2/12;
+    background-color: var(--light);
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: var(--dark);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 160%;
+}
+
+.password h4 {
+    padding: 1.1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.log_iind {
+    grid-column: 2/12;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 2rem;
+    min-height: 4rem;
+    margin-top: 8rem;   
+
+
+}
+.log_iind .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 1.2rem 6.3rem;
+    text-decoration: none;
+    border: 0;
+    
+}
+
+.log_iind .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+
+/*///////////////////////////////////////////////
+indstillinger
+///////////////////////////////////////////////*/
+
+.billed1 {
+    grid-column: 4/10;
+    height: 6rem;
+    margin-top: 20px;
+ 
+}
+ 
+.billed1 img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.ud{
+    grid-column: 10/13;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 31px;
+    height: 2rem;
+ 
+}
+.ud .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border: 0;
+    
+}
+
+.ud .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+ 
+.nametunermenet{
+    grid-column: 4/10;
+    height: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.safe {
+    grid-column: 10/12;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 10px;
+    height: 2rem;
+ 
+}
+.safe .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border: 1px;
+    
+}
+
+.safe .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+
+.tilføj{
+    grid-column: 10/12;
+    height: 4rem;
+    margin-top: 0.5rem;
+    text-align: center;
+ 
+}
+
+.tilføj .btn {
+
+    background: #fff;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+  
+  .tilføj .btn img {
+    width: 50px;
+    height: 50px;
+  
+
+  }
+  
+  .tilføj .btn img .fill {
+    fill: #25b99a;
+  }
+
+.tilføj_bruger {
+    margin-top: 25px;
+    grid-column: 4/10;
+}
+
+
+.liste{
+    grid-column: 1/13;
+    background-color: var(--dark);
+    margin-top: 10px;
+    height: 15rem;
+    text-align: center;
+ 
+}
+ 
+ 
+.straf{
+    grid-column: 4/10;
+    height: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+ 
+.ret{
+    grid-column: 10/12;
+    display: inline-block;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    height: 2rem;
+    margin-top: 2.5rem;
+
+}
+.ret .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.44rem 1rem;
+    text-decoration: none;
+    border: 1px;
+    
+}
+
+.ret .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+
+/*///////////////////////////////////////////////
+opret bruger
+///////////////////////////////////////////////*/
+
+/*.turnermentnaame {
+    grid-column: 2/12;
+    background-color: var(--light);
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: var(--dark);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 160%;
+    
+}
+
+.password {
+    grid-column: 2/12;
+    background-color: red;
+    height: 4rem;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+Blev allerede brugt, men har den samme funktion ... skal i javascript dog kunne noget andet ... spørg Jarne!
+} */
+
+.deltager {
+    grid-column: 2/12;
+    background-color: var(--light);
+    height: 4rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: var(--dark);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 160%;
+
+
+}
+
+.deltager h4 {
+    padding: 1.1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.straff {
+    grid-column: 2/12;
+    background-color: var(--light);
+    height: 4rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: var(--dark);
+    border: solid;
+    border-width: 0.1rem;
+    text-align: center;
+    font-size: 160%;
+
+}
+
+.straff h4 {
+    padding: 1.1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.opret {
+    grid-column: 2/12;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 160%;
+    margin-top: 40px;   
+
+
+}
+.opret .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 1rem 5.8rem;
+    text-decoration: none;
+    border: 0;
+    
+}
+
+.opret .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+/*///////////////////////////////////////////////
+responsive
+///////////////////////////////////////////////*/
+
+/*
+@media(max-width: 500px) {
+
+    
+}
+
+@media(min-width: 501px) {
+    
+    .log_ind{
+        margin-right: 10px;
+    }
+    .opret_bruger{
+        margin-left: 10px;
+    }
+    img {
+        width: 65%;
+        height: auto;
+    }
+} */
