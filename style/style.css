@@ -19,7 +19,7 @@ display: grid;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--dark)
 }
 
@@ -32,7 +32,7 @@ header img{
     max-width: 100%;
     height: auto;
 }
-/*
+
 html, body {
     width: 100%;
     height: 100%;
@@ -40,65 +40,7 @@ html, body {
     margin: 0px;
 }
 
-.slider {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #1f1f1f;
-    overflow: hidden;
-    position: absolute;
 
-}
-
-.slider > * {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #1f1f1f;
-    animation: slide 12s infinite;
-    overflow: hidden;
-}
-
-.slide:nth-child(1) {
-    left:0%;
-    animation-delay: -1s;
-    background-image: url(images/csgo.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.slide:nth-child(2) {
-    animation-delay: 2s;
-    background-image: url(images/bordfodbold.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.slide:nth-child(3) {
-    animation-delay: 5s;
-    background-image: url(images/curvefever1.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.slide:nth-child(4) {
-    left:0%;
-    animation-delay: 8s;
-    background-image: url(images/coding.png);
-    background-size: cover;
-    background-position: center;
-}
-
-@keyframes slide {
-    0% { left: 100%; width: 100%;}
-    5% { left:0%; }
-    25% { left: 0%;}
-    30% { left: -100%; width: 0%;}
-    30.0001% { left: -100%; width: 0%;}
-    100% { left: 100%; width: 0%;}
-}
-*/
 footer {
     position: sticky;
     margin-top: 0.8rem;
@@ -196,11 +138,22 @@ liste_screen
     margin-bottom: 1.1rem;
 }
 
+.pointss {
+    grid-column: 2/5;
+    text-align: center;
+    font-size: 140%;
+}
+
+.brugerr{
+    grid-column: 5/12;
+    text-align: center;
+    font-size: 140%;
+}
 
 .points {
     grid-column: 2/5;
     height: 19rem;
-    background-color: yellow;
+    background-color: grey;
 
 }
 
@@ -215,7 +168,7 @@ liste_screen
 
 .leaderpoints {
     grid-column: 1/5;
-    height: 4.8rem;
+    height: 3.14rem;
     background-color: var(--light);
     border: solid;
     border-width: 0.1rem;
@@ -225,7 +178,7 @@ liste_screen
 
 .leader {
     grid-column: 5/9;
-    height: 4.8rem;
+    height: 3.14rem;
     background-color: var(--light);
     border: solid;
     border-left: none;
@@ -238,7 +191,7 @@ liste_screen
 
 .leaderstraff {
     grid-column: 9/13;
-    height: 4.8rem;
+    height: 3.14rem;
     background-color: var(--light);
     border: solid;
     border-width: 0.1rem;
@@ -525,7 +478,7 @@ indstillinger
 .safe .btn {
     background: var(--dark);
     color: var(--light);
-    padding: 0.7rem 1rem;
+    padding: 0.2rem 1rem;
     text-decoration: none;
     border: 1px;
     
@@ -584,11 +537,17 @@ indstillinger
  
 }
  
- 
+.straaf {
+    grid-column: 4/10;
+    text-align:center;
+    font-size: 140%;
+    margin-top: 1rem;
+}
+
 .straf{
     grid-column: 4/10;
     height: 2rem;
-    margin-top: 2rem;
+    margin-top: 0.4rem;
     text-align: center;
 
 }
@@ -599,7 +558,7 @@ indstillinger
     margin-left: 0.4rem;
     margin-right: 0.4rem;
     height: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 0.6rem;
 
 }
 .ret .btn {
@@ -616,6 +575,28 @@ indstillinger
     color: var(--dark);
 }
 
+.inde {
+    grid-column: 1/13;
+    display: inline-block;
+    height: 4rem;
+    margin-top: 1.5rem;
+    font-size: 150%;
+    text-align: center;
+}
+
+.inde .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 2rem 9.7rem;
+    text-decoration: none;
+    border: 0px;
+    
+}
+
+.inde .btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
 
 
 /*///////////////////////////////////////////////
