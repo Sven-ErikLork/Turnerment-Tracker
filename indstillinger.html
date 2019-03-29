@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +8,46 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main id="grid"></main>
-        <section class="billed_1">
-          <img src="images/logo.png" alt="">
-        </section>
-        <section class="ud">
-            <a href=""class ="btn"></a>
-        </section>
-        <section class="nametunermenet">
-            <a href="" class="btn"></a>
-        </section>
-        <section class="tilføj">
-            <a href="" class="btn"></a>
+    <main id="grid">
+        <section class ="billed1">
+            <a href="liste_screen.html"><img src="images/logo.png" alt=""></a>
             
         </section>
-        <section class="liste">  
-
+        <section class="ud">
+            <a href="front.html" class="btn">Log ud</a>
         </section>
+            <section class="nametunermenet">
+                <h3>bordfodbold</h3>
+            </section>
+            <section class="safe">
+                <a href="" class="btn">Gem</a>
+            </section>
+            <section class="tilføj_bruger">
+                <input type="text" placeholder="Tilføj en Deltager.." id="item">
+            </section>
+            <section class="tilføj">
+                <a href="" class="btn" id="add"><img src="images/add.svg" alt=""></a>
+            </section>
 
-        <section straf>
-            <a href=""class="btn"></a>
-        </section>
+            <section class="liste">  
+                <!-- Uncompleted tasks -->
+			    <ul class="todo" id="todo"></ul>
 
+            </section>
+            <section class="straf">
+                <h3>Kage</h3>
+            </section>
+            <section class="ret">
+                <a href="" class="btn">Gem</a>
+            </section>
 
-
+    
     </main>
     <footer id="grid">
         <section class="inde">
-            <a href="" class="btn"> Gem</a>
+
         </section>
-     </footer>
+    </footer>
+    <script src="javascript/javascript.js"></script>
 </body>
 </html>
